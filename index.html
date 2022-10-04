@@ -1,0 +1,132 @@
+<!--Declares to the browser this is an HTML document.-->
+<!DOCTYPE html>
+<!--Start the HTML page and sets the lang to English-->
+<html lang="en">
+<!--Head tag is used to include the meta tags 
+    and links to the javaScript code page.-->
+    <head>
+        <!--Title of the tab at the top of the page-->
+        <title>Space Casino</title>
+        <!--Add a space background-->
+        <!--CSS information here-->
+    <style>
+        /*CSS code here*/
+
+        /*creates styles for everything inside the body tag*/
+        body {
+            /*sets an image as the page's background*/
+            background-image: url("space.jpg");
+            /*makes it so the background image doesn't repeat itself*/
+            background-repeat: no-repeat;
+            /*mhas the background stay in the intial position, isn't affected by scrolling*/
+            background-attachment: fixed;
+            /*changes the color of the text within the tag*/
+            color: white;
+            /*aligns the text to be in the page's center*/
+            text-align: center;
+        }
+
+        /*creates styles for everything inside <h1> tags*/
+        h1 {
+            /*aligns the text to be in the page's center*/
+            text-align: center;
+            /*edits the font's size*/
+            font-size: 75px;
+        }
+
+        /*creates styles for everything inside <h2> tags*/
+        h2 {
+            /*aligns the text to be in the page's center*/
+            text-align: center;
+            /*edits the font's size*/
+            font-size: 50px;
+        }
+
+        /*creates styles for everything inside paragragh tags*/
+        p {
+            /*aligns the text to be in the page's left*/
+            text-align: left;
+            /*edits the font's size*/
+            font-size: x-large;
+        }
+
+        /*creates styles for everything inside tags with the "theFinalCountdown" ID*/
+        #theFinalCountdown {
+            /*aligns the text to be in the page's center*/
+            text-align: center;
+            /*edits the font's size*/
+            font-size: xx-large;
+        }
+
+        /*creates styles for everything inside button tags*/
+        button {
+            /*Changes the background color*/
+            background-color: white;
+            /*changes color of text*/
+            color: green;
+            /*makes it so there isn't a border around the button*/
+            border: none;
+            /*adds padding for what's displayed inside the button*/
+            padding: 15px 32px;
+            /*aligns the text to the button's center*/
+            text-align: center;
+            /*give the text no decoration*/
+            text-decoration: none;
+            /*makes it so anything within the button tag respects it's padding and margin limits*/
+            display: inline-block;
+            /*edits the font's size*/
+            font-size: 16px;
+            /*adds a margin*/
+            margin: 4px 2px;
+            /*changes the cursor symbol once on any button*/
+            cursor: pointer;
+            /*addsa radius to the border*/
+            border-radius: 42px;
+            /*makes the text bolder*/
+            font-weight: bold;
+            /*moves the button into the center of the page*/
+            align-self: center;
+        }
+        /*styles for when the user hovers over buttons*/
+        button:hover {
+            /*changing the background's color*/
+            background-color: transparent;
+            /*adds a border; makes the border style a solid line and changes its color*/
+            border: 2px solid #4CAF50;
+            /*changes the color of text*/
+            color: white;
+        }
+    </style>        
+        <!--links to the javaScript code page-->
+        <script src="JavaScriptCode.js"></script> 
+    </head>
+
+    <!--Body tag is used to include the background image and the text for the header of the page.-->
+    <body>
+        <!-- Largest header -->
+        <h1>Space Casino</h1>
+        <!--second largest header-->
+        <h2>Where the odds are in your favor</h2>      
+        <!--adds an immage into the webpage; specifies the width and height-->
+        <img src="insidecasino.jpg" alt="Inside Casino" width="500" height="333">
+
+        <!--makes it so we can write in a different script language; linked to Javascript-->
+        <script>
+            //outputs the displayWelcome function inside the .js file
+            displayWelcome();
+            //outputs the diplayInstructions function inside the .js file
+            displayInstructions();
+
+            //displays a message onto the webpage
+            document.write("Space Game");
+            //display 3 linebreaks onto the webpage
+            document.write("<br/><br/><br/>");
+
+            //outputs the play function inside the .js file
+            play();
+        </script>
+        <!--3 line breaks-->
+        <br/><br/><br/>
+    </body>
+
+</html>
